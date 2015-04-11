@@ -1,4 +1,4 @@
 aikakirjanpito:
 
 22.3	2h, suunnittelua
-11.4	15:00 ->
+11.4	5h, toteutusta

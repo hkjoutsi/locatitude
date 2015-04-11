@@ -14,6 +14,10 @@
   <strong>Longitude:</strong>
   <%= @location.longitude %>
 </p>
+<p>
+  <strong>User:</strong>
+  <%= @location.user.username %> (<%= @location.user_id %>)
+</p>
 
 <div id="map">
 <iframe
