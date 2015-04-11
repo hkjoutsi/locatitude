@@ -12,5 +12,7 @@ describe "Users page" do
     visit users_path
     expect(page).to have_content 'Listing Users'
     expect(page).to have_content 'Pekka'
+
+    save_and_open_page
   end
 end
