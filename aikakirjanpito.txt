@@ -1,4 +1,6 @@
 aikakirjanpito:
 
 22.3	2h, suunnittelua
-11.4	5h, toteutusta
+11.4	5h, toteutusta, friendships, locations, geocoder
+12.4	4h 09:00 -> 13:00 friendship muokkausta, errors, validations
+12.4	3h 16:00-> 19:00 sessiot, näkymät, password and digest, kirjautuminen yms.

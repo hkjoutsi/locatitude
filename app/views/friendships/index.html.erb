@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
 <h1>Listing Friendships</h1>
 
@@ -14,8 +14,8 @@
   <tbody>
     <% @friendships.each do |friendship| %>
       <tr>
-        <td><%= friendship.requestor_id %></td>
-        <td><%= friendship.requestee_id %></td>
+        <td><%= friendship.user_id %></td>
+        <td><%= friendship.friend_id %></td>
         <td><%= link_to 'Show', friendship %></td>
         <td><%= link_to 'Edit', edit_friendship_path(friendship) %></td>
         <td><%= link_to 'Destroy', friendship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +27,6 @@
 <br>
 
 <%= link_to 'New Friendship', new_friendship_path %>
+<%= link_to 'Locations', locations_path %>
+<%= link_to 'Users', users_path %>
+<%= link_to 'Friendships', friendships_path %>

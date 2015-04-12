@@ -31,12 +31,15 @@ class LocationsController < ApplicationController
   # POST /locations.json
   def create
     @location = Location.new(location_params)
-
+    
     respond_to do |format|
       if @location.save
+        #store latest location in session (for testing)
+        session[:last_location] = "#{@location.address}, visited by #{@location.user}"
         format.html { redirect_to @location, notice: 'Location was successfully created.' }
         format.json { render :show, status: :created, location: @location }
       else
+        #flash.now[:error] = "Could not save location"
         format.html { render :new }
         format.json { render json: @location.errors, status: :unprocessable_entity }
       end

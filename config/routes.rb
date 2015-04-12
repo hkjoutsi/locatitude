@@ -4,8 +4,16 @@ Rails.application.routes.draw do
   resources :locations
 
   resources :users
+  get 'signup', to: 'users#new'
 
-root 'users#index'
+  resource :session, only: [:new, :create, :delete]
+  get 'login', to: 'sessions#new'
+  get 'signin', to: 'sessions#new'
+  delete 'signout', to: 'sessions#destroy'
+
+  root 'locations#index'
+  get 'kaikki_paikat', to: 'locations#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
