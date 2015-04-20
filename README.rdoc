@@ -1,3 +1,6 @@
 == README
 
 https://locatitude.herokuapp.com/
+
+Luovutettu ajan puutteessa.
+Sad panda is sad :(
